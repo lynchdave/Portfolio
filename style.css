@@ -1,0 +1,124 @@
+/* Basic Reset */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+    color: #cfd8dc; /* soft light text */
+}
+
+/* Header */
+.header {
+    background: rgba(20, 30, 60, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+.header-table {
+    width: 100%;
+}
+
+.right {
+    text-align: right;
+}
+
+.profile-img {
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid #f5f3ff;
+}
+
+/* Navigation */
+.nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #80d8ff; /* soft blue */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ff79c6;
+    text-shadow: 0 0 8px #ff79c6;
+}
+
+/* Sections */
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: rgba(10, 25, 50, 0.85);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+/* Headings with glow */
+h1, h2, h3 {
+    color: #a5d6ff;
+    text-shadow: 0 0 5px #a5d6ff;
+}
+
+/* Tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th {
+    background: #0f3057;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.table td, .table th {
+    padding: 10px;
+    border: 1px solid #1b263b;
+}
+
+/* Lists */
+.list {
+    padding-left: 20px;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(30, 50, 90, 0.85);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    background: rgba(50, 70, 120, 0.9);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #a5d6ff;
+    text-shadow: 0 0 5px #a5d6ff;
+}
