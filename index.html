@@ -2,17 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Peter John Dave A. Lobedurial | Web Developer</title>
-   <link rel="stylesheet" href="style.css">
+    <title>Peter Lobedurial | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+<!-- Space Background -->
+<div class="space-objects">
+    <div class="planet planet-1">🪐</div>
+    <div class="planet planet-2">🌍</div>
+    <div class="planet planet-3">🌕</div>
+    <div class="rocket">🚀</div>
+</div>
+
+<!-- Theme Toggle -->
+<div class="toggle-wrap">
+    <span id="mode-label">☀️ Light Mode</span>
+    <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<!-- Back To Top -->
+<button id="back-top">↑</button>
+
+<!-- Header -->
 <header class="header">
     <table class="header-table">
         <tr>
             <td>
                 <h1 class="name">LOBEDURIAL, PETER JOHN DAVE A.</h1>
-                <p class="role">Web Developer</p>
+                <p class="role" id="role-text"></p>
                 <p class="contact">09100486057 | lobedurialjohn@gmail.com</p>
             </td>
             <td class="right">
@@ -22,6 +45,7 @@
     </table>
 </header>
 
+<!-- Navigation -->
 <nav class="nav">
     <a href="#objective">Career Objective</a>
     <a href="#about">About</a>
@@ -33,51 +57,60 @@
     <a href="#contact">Contact</a>
 </nav>
 
+<!-- Sections -->
 <section class="section card" id="objective">
-    <h2>Career Objective</h2>
+    <h2>🎯 Career Objective</h2>
     <p>To obtain a challenging position as a Web Developer where I can apply my skills and grow professionally.</p>
 </section>
 
 <section class="section card" id="about">
-    <h2>About Me</h2>
+    <h2>👤 About Me</h2>
     <p>I am a Web Developer creating clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. Passionate about learning and improving my coding skills.</p>
 </section>
 
 <section class="section card" id="personal">
-    <h2>Personal Information</h2>
+    <h2>📋 Personal Information</h2>
     <table class="table">
         <tr><th>Detail</th><th>Information</th></tr>
         <tr><td>Full Name</td><td>Peter John Dave A. Lobedurial</td></tr>
         <tr><td>Birth Date</td><td>February 25, 2005</td></tr>
-        <tr><td>Age</td><td>20</td></tr>
+        <tr><td>Age</td><td id="age-value">20</td></tr>
         <tr><td>Gender</td><td>Male</td></tr>
-        <tr><td>Height</td><td>5'5"</td></tr>
+        <tr><td>Height</td><td>5'5</td></tr>
         <tr><td>Weight</td><td>50 kg</td></tr>
         <tr><td>Nationality</td><td>Filipino</td></tr>
     </table>
 </section>
 
 <section class="section card" id="tech">
-    <h2>Tech Stack</h2>
-    <ul class="list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>SQL</li>
-    </ul>
+    <h2>💻 Tech Stack</h2>
+    <div class="skill-bar"><span>HTML</span>
+        <div class="bar"><div class="fill" data-width="90%"></div></div>
+    </div>
+    <div class="skill-bar"><span>CSS</span>
+        <div class="bar"><div class="fill" data-width="80%"></div></div>
+    </div>
+    <div class="skill-bar"><span>JavaScript</span>
+        <div class="bar"><div class="fill" data-width="65%"></div></div>
+    </div>
+    <div class="skill-bar"><span>Python</span>
+        <div class="bar"><div class="fill" data-width="50%"></div></div>
+    </div>
+    <div class="skill-bar"><span>SQL</span>
+        <div class="bar"><div class="fill" data-width="55%"></div></div>
+    </div>
 </section>
 
 <section class="section card" id="projects">
-    <h2>Projects</h2>
-    <section class="project-card">
+    <h2>🛠️ Projects</h2>
+    <div class="project-card">
         <h3>Website Development Project</h3>
         <p>Developed a responsive website using HTML, CSS, and JavaScript with focus on layout, navigation, and user interface.</p>
-    </section>
+    </div>
 </section>
 
 <section class="section card" id="education">
-    <h2>Education</h2>
+    <h2>🎓 Education</h2>
     <table class="table">
         <tr><th>Level</th><th>School</th><th>Details</th></tr>
         <tr><td>College</td><td>STI</td><td>Bachelor of Science in IT (Currently Enrolled)</td></tr>
@@ -87,7 +120,7 @@
 </section>
 
 <section class="section card" id="skills">
-    <h2>Skills</h2>
+    <h2>⚡ Skills</h2>
     <ul class="list">
         <li>Fast Learner</li>
         <li>Adaptable to different environments</li>
@@ -97,14 +130,20 @@
 </section>
 
 <section class="section card" id="contact">
-    <h2>Contact</h2>
+    <h2>📬 Contact</h2>
     <p>Email: lobedurialjohn@gmail.com | Phone: 09100486057</p>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
     <p>© 2026 Peter John Dave A. Lobedurial. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://github.com/lynchdave" target="_blank">🐙 GitHub</a>
+        <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
+        <a href="mailto:lobedurialjohn@gmail.com">📧 Email</a>
+    </div>
 </footer>
 
-   <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
